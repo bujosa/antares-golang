@@ -2,8 +2,9 @@ package books
 
 import (
 	"database/sql"
-	"github.com/GoesToEleven/golang-web-dev/045-code-organization/03_multiple-packages/config"
 	"net/http"
+
+	"github.com/Antares-Golang/config"
 )
 
 func Index(w http.ResponseWriter, r *http.Request) {
