@@ -3,6 +3,7 @@ package config
 import (
 	"database/sql"
 	"fmt"
+
 	_ "github.com/lib/pq"
 )
 
@@ -10,7 +11,7 @@ var DB *sql.DB
 
 func init() {
 	var err error
-	DB, err = sql.Open("postgres", "postgres://bond:password@localhost/bookstore?sslmode=disable")
+	DB, err = sql.Open("postgres", "postgres://name:password@localhost/bookstore?sslmode=disable")
 	if err != nil {
 		panic(err)
 	}
