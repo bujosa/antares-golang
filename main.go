@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/GoesToEleven/golang-web-dev/045-code-organization/03_multiple-packages/books"
 	"net/http"
+
+	"github.com/Antares-Golang/books"
 )
 
 func main() {
